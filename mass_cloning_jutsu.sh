@@ -15,5 +15,3 @@ for element in ${repoArray[@]}; do
     echo "Clonning Repo $element"
     git clone $element
 done
-
-echo "hi"
