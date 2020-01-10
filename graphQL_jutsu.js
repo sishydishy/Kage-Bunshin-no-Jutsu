@@ -4,7 +4,7 @@ const axios = require('axios');
 // Endpoint URL
 const githubUrl = 'https://api.github.com/graphql'
 // Your personal access token
-const token = '2c35ade6b994a0a824ec2cfebdc3d2f1b2d2781a'
+const token = process.env.token;
 // The Authorization in the header of the request
 const oauth = {Authorization: 'bearer ' + token}
 // The GraphQL query, a string
@@ -31,3 +31,5 @@ axios.post(githubUrl, {query: query}, {headers: oauth})
   .catch(function (error) {
     console.log(error);
   });
+//var lame = $name;
+//console.log(process.env.name);

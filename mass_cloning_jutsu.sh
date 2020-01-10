@@ -1,4 +1,20 @@
 #!/bin/bash
+
+echo "=============================================="
+echo "Welcome To The Mass Github Cloning Tool"
+echo "=============================================="
+
+echo "Before we continue please make sure you have read the README for this repo"
+
+read -p "Please enter you Github OAUTH Token: " token
+
+export token
+
+
+
+
+
+
 echo "Running mass clone script..."
 
 # repoArray=(
@@ -18,3 +34,14 @@ echo "Running mass clone script..."
 npm i axios
 
 node graphQL_jutsu.js | jq .[].search.edges[].node.sshUrl
+
+
+# echo "hello"
+
+# read -p "Name: " name
+
+# export name
+
+# echo $name
+
+# node graphQL_jutsu.js
